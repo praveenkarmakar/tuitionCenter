@@ -1,12 +1,55 @@
-ul{ 
+nav{
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  padding: 1px 100px;
+  transition: 0.5s;
+  box-sizing: border-box;
+}
+nav .logo img{
+  float: left;
+  width: 80px;
+  transition: 0.5s;
+  margin: 20px;
+}
+nav.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+nav.black{
+  background: rgba(0,0,0,.8);
+  transition: 0.8s;  
+}
+nav ul{ 
   float: right;
 list-style-type: none;
-margin-top: 25px
+margin-top: 25px;
+display: flex;
 }
-ul li{
+nav ul li{
   display: inline-block;
 }
-ul li a{
+nav ul li a{
   padding: 5px 20px;
-  border: 1px solid black
+  border: 1px transparent;
+  color: black;
+  text-transform: uppercase;
+  transition: 0.5s;
+  text-decoration: none;
+  line-height: 50px;
+}
+nav ul li a.active,
+nav ul li a:hover {
+  color: aliceblue;
+  background-color: slategrey;
+  transition: .5s;
+}
+
+section.sec1{
+  width: 100%;
+  background: url(bg1.jpg);
+  background-size: cover;
+  height: 100ch;
 }
