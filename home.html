@@ -13,6 +13,34 @@
                 $('nav').removeClass('black');
             }
         })
+            function validateform(){
+            var x=document.forms["myform"]["fname"].value;
+            if (x==""){
+                alert(" First name must be fillerd out");
+                return false;
+            }
+            var x=document.forms["myform"]["lname"].value;
+            if (x==""){
+                alert("Last  name must be fillerd out");
+                return false;
+            }
+            var x=document.forms["myform"]["num"].value;
+            if (x==""){
+                alert(" Number must be fillerd out");
+                return false;
+            }
+            var y=document.forms["myform"]["num"].value;
+            if (y.length >10){
+                alert("Please enter the valid no");
+                return false;
+            }
+            var y=document.forms["myform"]["num"].value;
+            if (y.length <10){
+                alert("Please enter the valid no");
+                return false;
+            }
+            
+        }
         </script>
     </head>
     <body>
@@ -26,6 +54,30 @@
                     <li><a href="#">About</a></li>
                     <li><a href="#">Contact Us</a></li>
                 </ul>
+                <div align="center">
+                    <br><br><br><br>
+                    <a href="#loginScreen" class="button">Registeration</a>
+                </div>
+                <div id="loginScreen">
+                        <form name="myform" onsubmit="return validateform()" method="post">
+                                <div class="main" >
+                                    <h>Enter your first name </h><br><br>
+                                    <input type="text" id=fname><br><br>
+                                    <h>Enter your last name</h><br><br>
+                                    <input type="text" id=lname><br><br>
+                                    <h>Enter your number</h><br><br>
+                                    <input type="number" id=num><br><br>
+                                    <input type="submit" id=submit value="submit" onclick="myfunction()"><br>
+                                </div>
+                                   
+                            </form>
+                            
+                    <a href="#" class="cancel">&times;</a>
+                </div>
+                <div id="cover" >
+                </div>
+                
+        
             </div>
         </nav>
         <section class="sec1">
