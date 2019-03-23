@@ -1,17 +1,18 @@
 nav{
   position: fixed;
-  top: 0%;
+  top: 5%;
   left: 0%;
   width: 100%;
-  padding: 1px 100px;
+  padding: 1px 150px;
   transition: 0.5s;
   box-sizing: border-box;
+  background: rgba(255, 255, 255, 0.521) ;
 }
 nav .logo img{
   float: left;
-  width: 80px;
+  width: 100px;
   transition: 0.5s;
-  margin: 20px;
+  margin: 10px;
 }
 nav.sticky {
   position: fixed;
@@ -20,7 +21,14 @@ nav.sticky {
 }
 nav.black{
   background: rgba(0,0,0,.8);
-  transition: 0.8s;  
+  transition: 0.8s; 
+  padding: 0% 0% 
+}
+nav.black ul li a{
+  color: antiquewhite
+}
+nav.black .logo img{
+  width: 80px;
 }
 nav ul{ 
   float: right;
@@ -49,7 +57,8 @@ nav ul li a:hover {
 
 section.sec1{
   width: 100%;
-  background: url(bg1.jpg);
+  background: url(book-quotes-1531945007.jpg);
   background-size: cover;
-  height: 100ch;
+  height: 60ch;
+  background-attachment: fixed;
 }
