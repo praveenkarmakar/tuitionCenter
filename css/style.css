@@ -62,3 +62,107 @@ section.sec1{
   height: 60ch;
   background-attachment: fixed;
 }
+.button
+{
+	width: 140px;
+	padding:5px 20px;
+	background-color:lightblue;
+	box-shadow: -8px 8px 10px 3px rgba(0,0,0,0.2);
+  font-weight:bold;
+  text-decoration:none;
+  float:left;
+  margin-left:1050px;
+  margin-top:-40px;
+  border-color:black;
+}
+#cover{
+    position:fixed;
+    top:0;
+    left:0;
+    background:rgba(0,0,0,0.6);
+    z-index:5;
+    width:200%;
+    height:100%;
+    display:none;
+}
+#loginScreen
+{
+    height:500px;
+    width:600px;
+    margin:0 auto;
+    position:relative;
+    z-index:10;
+    display:none;
+    border:5px solid #cccccc;
+	  border-radius:10px;
+}
+#loginScreen:target, #loginScreen:target + #cover{
+    display:block;
+    opacity:2;
+}
+.cancel
+{
+    display:block;
+    position:absolute;
+    top:3px;
+    right:2px;
+    background:rgb(245,245,245);
+    color:black;
+    height:40px;
+    width:35px;
+    font-size:30px;
+    text-decoration:none;
+    text-align:center;
+    font-weight:bold;
+}
+#loginscreen h{
+    font-size:20px;
+
+}
+.main h{
+    font-size:30px;
+    color:brown;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left:90px;
+    margin-top:80px;
+    font-weight:bold;
+}
+.main input[type=text]{
+    width:20%;
+    padding:5px;
+    margin-left:90px;
+    border-color:black;
+    font-weight:bold;
+}
+.main input[type=submit]{
+    width:40%;
+    padding:5px;
+    margin-left:110px;
+    padding:5px;
+    font-size:20px;
+    border-color:black;
+    border-style: double;
+    background-color:blue;
+    font-weight:bold;
+}
+.main input[type=number]{
+    width:20%;
+    padding:5px;
+    margin-left:90px;
+    border-color:black;
+}
+.main input[type=text]:focus{
+    background-color: lightblue;
+    width:80%;
+    margin-left:30px;
+    
+ }
+.main input[type=button]:focus{
+   background-color:lightblue;
+   width:80%;
+}
+.main input[type=number]:focus{
+   background-color:lightblue;
+   width:80%;
+   margin-left:30px;
+}
